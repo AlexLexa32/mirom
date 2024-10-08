@@ -23,9 +23,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756d0815-da0f-4884-a90b-39613d786742" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="756d0815-da0f-4884-a90b-39613d786742" name="Changes" comment="mda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mirro.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mirro.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mirro.h" beforeDir="false" afterPath="$PROJECT_DIR$/mirro.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +53,13 @@
     "assignee": "Englend125"
   }
 }]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="13878bed-b66d-4f6c-a75a-a93fad2d45e1" />
+  </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/AlexLexa32/mirom",
-    "accountId": "13878bed-b66d-4f6c-a75a-a93fad2d45e1"
+    "accountId": "b2e17366-d0a4-49d6-9ac0-52af5dac376f"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
@@ -93,6 +98,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -115,8 +121,17 @@
       <workItem from="1728068326899" duration="920000" />
       <workItem from="1728109058750" duration="1032000" />
       <workItem from="1728303734094" duration="1479000" />
-      <workItem from="1728307134854" duration="5555000" />
+      <workItem from="1728307134854" duration="13463000" />
     </task>
+    <task id="LOCAL-00001" summary="mda">
+      <option name="closed" value="true" />
+      <created>1728326793745</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728326793745</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,5 +141,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mda" />
+    <option name="LAST_COMMIT_MESSAGE" value="mda" />
   </component>
 </project>
