@@ -12,7 +12,6 @@ bool flat_mirro<T>::IsCross(light<T> light) {
 
   while (i <= max(A_.x, B_.x) && j <= max(A_.y, B_.y)) {
     if (p.x == i && p.y == j) return 1;
-
     i += x_len;
     j += y_len;
   }
@@ -22,7 +21,9 @@ bool flat_mirro<T>::IsCross(light<T> light) {
 
 template<class T>
 light<T> flat_mirro<T>::Reflect(light<T> Light) {
-  light<T> ans(Light.getPoints().second);
-  ans = -Light;
-  return ans;
+    light ans = Light;
+    ans.setPoint(Light.GetPoints().second);
+    ans = ans.Rotate(2 * min(ans.GetAngle(math_vector<T>(A_, B_)), ans.GetAngle(math_vector<T>(B_, A_))));
+
+    return ans;
 }
