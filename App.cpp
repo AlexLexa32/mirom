@@ -145,10 +145,10 @@ int16_t App::render() {
                 for (auto& elem : pixels) {
                     window_->draw(elem);
                 }
-                for (auto& elem : polygon) {
-                    flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
-                                     Point(elem[1].position.x, elem[1].position.y));
-                }
+                // for (auto& elem : polygon) {
+                //     // flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
+                //     //                  Point(elem[1].position.x, elem[1].position.y));
+                // }
                 vec_start = r.GetPointImage(vec_start);
                 window_->display();
                 sf::sleep(sf::milliseconds(20));

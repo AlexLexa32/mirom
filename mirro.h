@@ -4,7 +4,7 @@
 class flat_mirro {
 public:
     flat_mirro() = default;
-    flat_mirro(const Point& A, const Point& B) : A_(A), B_(B) {};
+    flat_mirro(Point A, Point B) : A_(A), B_(B) {};
 
     virtual bool IsCross(light light);
     virtual Point Cross(light light);
@@ -15,7 +15,7 @@ protected:
     Point B_;
 };
 
-class rad_mirro : public flat_mirro {
+class rad_mirro : public flat_mirro{
 public:
     rad_mirro() = default;
     rad_mirro(Point A, Point B, Point C, double R) : flat_mirro(A, B), R_(R), C_(C) {};

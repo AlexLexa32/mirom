@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "mirom::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mirom-Debug-559ec604a19da7f20a35.json",
+					"jsonFile" : "target-mirom-Debug-d04c4239d5636c9d3417.json",
 					"name" : "mirom",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/macbook/miromdwjsj/cmake-build-debug",
-		"source" : "/Users/macbook/miromdwjsj"
+		"build" : "/Users/noobmaster_2007/programming/pracs/miromgg/cmake-build-debug",
+		"source" : "/Users/noobmaster_2007/programming/pracs/miromgg"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 7
 	}
 }

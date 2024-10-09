@@ -11,6 +11,8 @@ set(SOURCE_FILES main.cpp
         math_vector.cpp
         light.h
         light.cpp
+        mirro.h
+        mirro.cpp
 )
 add_executable(mirom ${SOURCE_FILES}
         main.cpp)
