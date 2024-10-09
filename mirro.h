@@ -1,34 +1,32 @@
 #pragma once
 #include "light.h"
 
-template<class T>
 class flat_mirro {
 public:
     flat_mirro() = default;
-    flat_mirro(Point<T> A, Point<T> B) : A_(A), B_(B) {};
+    flat_mirro(const Point& A, const Point& B) : A_(A), B_(B) {};
 
-    virtual bool IsCross(light<T> light);
-    virtual Point<T> Cross(light<T> light);
-    virtual light<T> Reflect(light<T> light);
+    virtual bool IsCross(light light);
+    virtual Point Cross(light light);
+    virtual light Reflect(light light);
 
 protected:
-    Point<T> A_;
-    Point<T> B_;
+    Point A_;
+    Point B_;
 };
 
-template<class T>
-class rad_mirro : public flat_mirro<T> {
+class rad_mirro : public flat_mirro {
 public:
     rad_mirro() = default;
-    rad_mirro(Point<T> A, Point<T> B, Point<T> C, T R) : flat_mirro<T>(A, B), R_(R), C_(C) {};
+    rad_mirro(Point A, Point B, Point C, double R) : flat_mirro(A, B), R_(R), C_(C) {};
 
-    bool IsCross(light<T> Light);
+    bool IsCross(light Light);
 
-    light<T> Reflect(light<T> Light);
+    light Reflect(light Light);
 
 protected:
-  Point<T> C_;
-  T R_;
+  Point C_;
+  double R_;
 };
 
 // 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

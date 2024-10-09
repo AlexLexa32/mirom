@@ -6,7 +6,7 @@ class math_vector {
 public:
     math_vector() = default;
     math_vector(double x, double y): x_(x), y_(y) {};
-    math_vector(Point<double> A, Point<double> B): x_(B.x - A.x), y_(B.y - A.y) {};
+    math_vector(Point A, Point B): x_(B.x - A.x), y_(B.y - A.y) {};
 
     math_vector operator+(math_vector other);
     math_vector operator-(math_vector other);
@@ -20,7 +20,7 @@ public:
 
     math_vector Rotate(double angle);
 
-    Point<double> GetPointImage(Point<double> point);
+    Point GetPointImage(Point point);
 
     void setX(double x);
     void setY(double y);

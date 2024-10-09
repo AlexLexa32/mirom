@@ -7,8 +7,6 @@ set(SOURCE_FILES main.cpp
         App.h
         App.cpp
         Point.h
-        Mirror.cpp
-        Mirror.h
         math_vector.h
         math_vector.cpp
         light.h

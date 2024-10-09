@@ -21,8 +21,8 @@ int16_t App::render() {
     int16_t wall_number = 0;
 
     //ray
-    Point<double> vec_start(-1, -1);
-    Point<double> vec_end(-1, -1);
+    Point vec_start(-1, -1);
+    Point vec_end(-1, -1);
     sf::VertexArray line(sf::Lines, 2);
     line[0].position = sf::Vector2f(0,0);
     line[1].position = sf::Vector2f(100,150);
@@ -30,7 +30,8 @@ int16_t App::render() {
     line[1].color = sf::Color::Cyan;
 
     //play
-    math_vector r(0, 0);
+    light r(0, 0);
+    std::vector<sf::RectangleShape> pixels;
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
@@ -103,12 +104,12 @@ int16_t App::render() {
                 window_->clear();
                 if (kostil && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                     if (vec_start.x == -1) {
-                        vec_start = Point<double>(m_pozition.x, m_pozition.y);
-                        vec_end = Point<double>(-1, -1);
+                        vec_start = Point(m_pozition.x, m_pozition.y);
+                        vec_end = Point(-1, -1);
                         line[0].position = sf::Vector2f(vec_start.x, vec_start.y);
                         line[1].position = sf::Vector2f(vec_end.x, vec_end.y);
                     } else {
-                        vec_end = Point<double>(m_pozition.x, m_pozition.y);
+                        vec_end = Point(m_pozition.x, m_pozition.y);
                         line[0].position = sf::Vector2f(vec_start.x, vec_start.y);
                         line[1].position = sf::Vector2f(vec_end.x, vec_end.y);
                     }
@@ -118,12 +119,13 @@ int16_t App::render() {
                 if (vec_end.x != -1) {
                     window_->draw(line);
                     if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
-                        r = math_vector(vec_start/1234, vec_end/1234);
+                        r = light(vec_start/134, vec_end/134);
                         window_->clear();
                         for (auto& elem : polygon) {
                             window_->draw(elem);
                         }
                         stage = play;
+                        break;
                     }
                 }
                 for (auto& elem : polygon) {
@@ -133,10 +135,23 @@ int16_t App::render() {
                 break;
             case play:
                 sf::RectangleShape pixel(sf::Vector2f(1, 1));
-                pixel.setPosition(vec_start.x, vec_end.y);
+                pixel.setPosition(vec_start.x, vec_start.y);
                 pixel.setFillColor(sf::Color::Yellow);
-                window_->draw(pixel);
+                pixels.push_back(pixel);
+                window_->clear();
+                for (auto& elem : polygon) {
+                    window_->draw(elem);
+                }
+                for (auto& elem : pixels) {
+                    window_->draw(elem);
+                }
+                for (auto& elem : polygon) {
+                    flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
+                                     Point(elem[1].position.x, elem[1].position.y));
+                }
                 vec_start = r.GetPointImage(vec_start);
+                window_->display();
+                sf::sleep(sf::milliseconds(20));
 
                 break;
         }

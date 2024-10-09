@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
 
-template <class Tp>
 struct Point {
-    Tp x, y;
-    Point(Tp x0 = 0, Tp y0 = 0): x(x0), y(y0) {};
+    double x, y;
+    Point(double x0 = 0, double y0 = 0): x(x0), y(y0) {};
+    Point(const Point& xx): x(xx.x), y(xx.x) {};
     Point operator/(double xx) {
         Point q = *this;
         q.x /= xx;
@@ -18,8 +18,7 @@ struct Point {
     }
 };
 
-template <class Tp>
-std::ostream& operator<<(std::ostream& out, const Point<Tp>& point) {
+std::ostream& operator<<(std::ostream& out, const Point& point) {
     out << '(' << point.x << ' ' << point.y << ')';
     return out;
 }

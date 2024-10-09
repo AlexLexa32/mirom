@@ -6,7 +6,7 @@
 #include "Point.h"
 #include "button.h"
 #include "light.h"
-#include "Mirror.h"
+#include "mirro.h"
 
 class App {
 public:

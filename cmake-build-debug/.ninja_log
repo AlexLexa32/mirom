@@ -1,19 +1,17 @@
-# ninja log v6
-2	268	1728473183773373269	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-2	271	1728473183773282521	CMakeFiles/mirom.dir/Mirror.cpp.o	852848681e61235b
-2	271	1728473183773463308	CMakeFiles/mirom.dir/light.cpp.o	e8c364d104b423b8
-1	360	1728473183772949487	CMakeFiles/mirom.dir/main.cpp.o	6b0a91b0f6bc6150
-2	394	1728473183773178523	CMakeFiles/mirom.dir/App.cpp.o	7cd7552744fa72b0
-4	341	1728473229299431526	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-6	243	1728473240243407024	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-6	319	1728473273393564318	CMakeFiles/mirom.dir/light.cpp.o	e8c364d104b423b8
-5	424	1728473273392781295	CMakeFiles/mirom.dir/main.cpp.o	6b0a91b0f6bc6150
-6	456	1728473273393350156	CMakeFiles/mirom.dir/App.cpp.o	7cd7552744fa72b0
-4	327	1728473288611982692	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-5	243	1728473880664138675	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-5	347	1728473963472940767	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-6	428	1728474491967818982	CMakeFiles/mirom.dir/math_vector.cpp.o	d8c8b6a8d4ef2143
-4	358	1728474688207010064	CMakeFiles/mirom.dir/main.cpp.o	6b0a91b0f6bc6150
-4	215	1728474707420489904	CMakeFiles/mirom.dir/light.cpp.o	e8c364d104b423b8
-3	330	1728474721623096859	CMakeFiles/mirom.dir/App.cpp.o	7cd7552744fa72b0
-330	426	1728474721949532843	mirom	2bffd287083772a4
+# ninja log v5
+658	709	1728477016602609297	mirom	276832b8be0e714f
+11	637	1728477435735706742	CMakeFiles/mirom.dir/main.cpp.o	33f73e5e93947ad2
+3	418	1728475793061384797	CMakeFiles/mirom.dir/math_vector.cpp.o	68321e7d2636730e
+12	589	1728477435686469873	CMakeFiles/mirom.dir/light.cpp.o	45bbe96d470dbc59
+8	658	1728477016547992741	CMakeFiles/mirom.dir/App.cpp.o	d0935db0324dfa8e
+3	408	1728475793049298904	CMakeFiles/mirom.dir/Mirror.cpp.o	c0e4a9f0ca9c23a3
+1	66	1728477456649042973	build.ninja	d081a123ce80c8e9
+8	613	1728477508096916808	CMakeFiles/mirom.dir/main.cpp.o	33f73e5e93947ad2
+23	698	1728477521822246753	CMakeFiles/mirom.dir/App.cpp.o	d0935db0324dfa8e
+25	718	1728477640676107446	CMakeFiles/mirom.dir/App.cpp.o	d0935db0324dfa8e
+13	1957	1728477892668582588	CMakeFiles/mirom.dir/math_vector.cpp.o	68321e7d2636730e
+15	1958	1728477892668232788	CMakeFiles/mirom.dir/light.cpp.o	45bbe96d470dbc59
+12	2039	1728477892754235243	CMakeFiles/mirom.dir/main.cpp.o	33f73e5e93947ad2
+13	2175	1728477892888715758	CMakeFiles/mirom.dir/App.cpp.o	d0935db0324dfa8e
+15	672	1728477939608416970	CMakeFiles/mirom.dir/main.cpp.o	33f73e5e93947ad2
+15	716	1728477939657203662	CMakeFiles/mirom.dir/App.cpp.o	d0935db0324dfa8e

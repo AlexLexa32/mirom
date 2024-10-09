@@ -1,44 +1,42 @@
 #include "mirro.h"
 
-template<class T>
-bool flat_mirro<T>::IsCross(light<T> Light) {
+bool flat_mirro::IsCross(light Light) {
   auto points = Light.GetPoints();
 
-  T light_b = (points.first.y * points.second.x - points.first.x * points.second.y)
+    double light_b = (points.first.y * points.second.x - points.first.x * points.second.y)
               / (points.second.x - points.first.x);
-  T light_k = (points.first.y - points.second.y) / (points.first.x - points.second.x);
+    double light_k = (points.first.y - points.second.y) / (points.first.x - points.second.x);
 
-  T mirro_b = (A_.x * B_.y - A_.y * B_.x) / (A_.x - B_.x);
-  T mirro_k = (A_.x - B_.x) / (A_.y - B_.y);
+    double mirro_b = (A_.x * B_.y - A_.y * B_.x) / (A_.x - B_.x);
+    double mirro_k = (A_.x - B_.x) / (A_.y - B_.y);
 
-  Point<T> ans((mirro_b - light_b) / (light_k - mirro_k),
+  Point ans((mirro_b - light_b) / (light_k - mirro_k),
                (mirro_b * light_k - mirro_k * light_b) / (light_k - mirro_k));
 
-  return Light.GetAngle(math_vector<T>(points.first, ans)) == 0;
+  return Light.GetAngle(math_vector(points.first, ans)) == 0;
 }
 
-template<class T>
-Point<T> flat_mirro<T>::Cross(light<T> Light) {
+
+Point flat_mirro::Cross(light Light) {
     auto points = Light.GetPoints();
 
-    T light_b = (points.first.y * points.second.x - points.first.x * points.second.y)
+    double light_b = (points.first.y * points.second.x - points.first.x * points.second.y)
                 / (points.second.x - points.first.x);
-    T light_k = (points.first.y - points.second.y) / (points.first.x - points.second.x);
+    double light_k = (points.first.y - points.second.y) / (points.first.x - points.second.x);
 
-    T mirro_b = (A_.x * B_.y - A_.y * B_.x) / (A_.x - B_.x);
-    T mirro_k = (A_.x - B_.x) / (A_.y - B_.y);
+    double mirro_b = (A_.x * B_.y - A_.y * B_.x) / (A_.x - B_.x);
+    double mirro_k = (A_.x - B_.x) / (A_.y - B_.y);
 
-    Point<T> ans((mirro_b - light_b) / (light_k - mirro_k),
+    Point ans((mirro_b - light_b) / (light_k - mirro_k),
                  (mirro_b * light_k - mirro_k * light_b) / (light_k - mirro_k));
 
     return ans;
 }
 
-template<class T>
-light<T> flat_mirro<T>::Reflect(light<T> Light) {
+light flat_mirro::Reflect(light Light) {
     light ans = Light;
     ans.setPoint(Light.GetPoints().second);
-    ans = ans.Rotate(2 * min(ans.GetAngle(math_vector<T>(A_, B_)), ans.GetAngle(math_vector<T>(B_, A_))));
+    ans = ans.Rotate(2 * std::min(ans.GetAngle(math_vector(A_, B_)), ans.GetAngle(math_vector(B_, A_))));
 
     return ans;
 }

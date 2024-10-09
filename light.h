@@ -4,13 +4,14 @@
 class light: public math_vector {
 public:
     light() = default;
-    light(Point<double> point) : math_vector(0,0), p_(point) {};
-    light(Point<double> A, Point<double> B) : math_vector(A, B), p_(A) {};
+    light(Point point) : math_vector(0,0), p_(point) {};
+    light(Point A, Point B) : math_vector(A, B), p_(A) {};
     light& operator=(light other);
-    std::pair<Point<double>, Point<double>> GetPoints();
+    std::pair<Point, Point> GetPoints();
+    light Rotate(double angle);
 
-    void setPoint(Point<double> a);
+    void setPoint(Point a);
 protected:
-    Point<double> p_;
+    Point p_;
 };
 
