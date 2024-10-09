@@ -1,5 +1,5 @@
 #pragma once
-#include "point.h"
+#include "Point.h"
 #include <cmath>
 
 template <class T>
@@ -21,7 +21,7 @@ public:
 
     math_vector Rotate(T angle);
 
-    Point<T> GetPointImage(Point<T> point);
+    Point<T> GetPointImage(const Point<T>& point);
 
     void setX(T x);
     void setY(T y);

@@ -11,6 +11,8 @@ set(SOURCE_FILES main.cpp
         Mirror.h
         math_vector.h
         math_vector.cpp
+        light.h
+        light.cpp
 )
 add_executable(mirom ${SOURCE_FILES}
         main.cpp)

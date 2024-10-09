@@ -1,24 +1,5 @@
 #include "App.h"
 
-//void f() {
-//    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-//        if (vec_start.x == -1) {
-//            vec_start = Point<double>(m_pozition.x, m_pozition.y);
-//            vec_end = Point<double>(-1, -1);
-//            lines[0].position = sf::Vector2f(vec_start.x, vec_start.y);
-//            lines[1].position = sf::Vector2f(vec_end.x, vec_end.y);
-//        } else {
-//            vec_end = Point<double>(m_pozition.x, m_pozition.y);
-//            lines[0].position = sf::Vector2f(vec_start.x, vec_start.y);
-//            lines[1].position = sf::Vector2f(vec_end.x, vec_end.y);
-//        }
-//    } else {
-//        if (vec_end.x != -1) {
-//
-//        }
-//    }
-//}
-
 int16_t App::render() {
     Stage stage = input;
     //input
@@ -47,6 +28,9 @@ int16_t App::render() {
     line[1].position = sf::Vector2f(100,150);
     line[0].color = sf::Color::Blue;
     line[1].color = sf::Color::Cyan;
+
+    //play
+    math_vector<double> r(0, 0);
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
@@ -55,10 +39,10 @@ int16_t App::render() {
             if (event.type == sf::Event::Closed)
                 window_->close();
         }
-        window_->clear();
 
         switch (stage) {
             case input:
+                window_->clear();
                 label.draw(*window_);
                 for (int i = 3; i <= 9; ++i) {
                     buttons[i-3].draw(*window_);
@@ -74,6 +58,7 @@ int16_t App::render() {
                 }
                 break;
             case points:
+                window_->clear();
                 label.draw(*window_);
                 if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                     if (kostil) {
@@ -82,12 +67,16 @@ int16_t App::render() {
                             for (int i = 0; i < angl_num; ++i) {
                                 sf::VertexArray q(sf::Lines, 2);
                                 polygon[i] = sf::VertexArray(sf::Lines, 2);
-                                polygon[i][0].position = sf::Vector2f(m_pozition.x, m_pozition.y);
-                                polygon[i][1].position = sf::Vector2f(m_pozition.x, m_pozition.y);
+                                polygon[i][0].position = sf::Vector2f(m_pozition.x,
+                                                                      m_pozition.y);
+                                polygon[i][1].position = sf::Vector2f(m_pozition.x,
+                                                                      m_pozition.y);
                             }
                         } else {
-                            polygon[cur_ind-1][1].position = sf::Vector2f(m_pozition.x, m_pozition.y);
-                            polygon[cur_ind][0].position = sf::Vector2f(m_pozition.x, m_pozition.y);
+                            polygon[cur_ind-1][1].position = sf::Vector2f(m_pozition.x,
+                                                                          m_pozition.y);
+                            polygon[cur_ind][0].position = sf::Vector2f(m_pozition.x,
+                                                                        m_pozition.y);
                         }
                         cur_ind++;
                         if (cur_ind == angl_num) {
@@ -103,18 +92,53 @@ int16_t App::render() {
                 }
                 break;
             case walls:
+                window_->clear();
                 for (auto& elem : polygon) {
                     window_->draw(elem);
                 }
 
-//                stage = ray;
+                stage = ray;
                 break;
-//            case ray:
-//                if (vec_end.x != -1) {
-//                    window_->draw(line);
-//                }
-//
-//                break;
+            case ray:
+                window_->clear();
+                if (kostil && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+                    if (vec_start.x == -1) {
+                        vec_start = Point<double>(m_pozition.x, m_pozition.y);
+                        vec_end = Point<double>(-1, -1);
+                        line[0].position = sf::Vector2f(vec_start.x, vec_start.y);
+                        line[1].position = sf::Vector2f(vec_end.x, vec_end.y);
+                    } else {
+                        vec_end = Point<double>(m_pozition.x, m_pozition.y);
+                        line[0].position = sf::Vector2f(vec_start.x, vec_start.y);
+                        line[1].position = sf::Vector2f(vec_end.x, vec_end.y);
+                    }
+                } else if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
+                    kostil = true;
+                }
+                if (vec_end.x != -1) {
+                    window_->draw(line);
+                    if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
+                        r = math_vector<double>(vec_start/1234, vec_end/1234);
+                        window_->clear();
+                        for (auto& elem : polygon) {
+                            window_->draw(elem);
+                        }
+                        stage = play;
+                    }
+                }
+                for (auto& elem : polygon) {
+                    window_->draw(elem);
+                }
+
+                break;
+            case play:
+                sf::RectangleShape pixel(sf::Vector2f(1, 1));
+                pixel.setPosition(vec_start.x, vec_end.y);
+                pixel.setFillColor(sf::Color::Yellow);
+                window_->draw(pixel);
+                vec_start = r.GetPointImage(vec_start);
+
+                break;
         }
 
 

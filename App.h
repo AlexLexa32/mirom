@@ -5,6 +5,8 @@
 #include <SFML/Window/Keyboard.hpp>
 #include "Point.h"
 #include "button.h"
+#include "light.h"
+#include "Mirror.h"
 
 class App {
 public:

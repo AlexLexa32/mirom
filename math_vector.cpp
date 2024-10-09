@@ -44,8 +44,8 @@ math_vector<T> math_vector<T>::Rotate(T angle) {
 }
 
 template<class T>
-Point<T> math_vector<T>::GetPointImage(Point<T> point) {
-    return point(point.x() + x_, point.y() + y_);
+Point<T> math_vector<T>::GetPointImage(const Point<T>& point) {
+    return Point(point.x + x_, point.y + y_);
 }
 
 template<class T>
@@ -56,6 +56,13 @@ void math_vector<T>::setX(T x) {
 template<class T>
 void math_vector<T>::setY(T y) {
     y_ = y;
+}
+
+template<class T>
+math_vector<T>& math_vector<T>::operator=(math_vector<T> other) {
+    std::swap(x_, other.x_);
+    std::swap(y_, other.y_);
+    return *this;
 }
 
 
