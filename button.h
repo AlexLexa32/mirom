@@ -55,7 +55,7 @@ public:
         sf::Text txt;
         txt.setString(txt_);
         txt.setFont(font);
-        txt.setFillColor(sf::Color::Magenta);
+        txt.setFillColor(sf::Color::Black);
         txt.setCharacterSize(sz_);
         txt.setPosition(x_+5, y_-20);
         window.draw(txt);

@@ -32,9 +32,12 @@ int16_t App::render() {
     int angl_num = 0;
 
     //poinsts
-    sf::VertexArray polygon(sf::Lines);
+    std::vector<sf::VertexArray> polygon;
     bool kostil = true;
     int cur_ind = 0;
+
+    //walls
+    int16_t wall_number = 0;
 
     //ray
     Point<double> vec_start(-1, -1);
@@ -62,7 +65,7 @@ int16_t App::render() {
                     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
                         if (buttons[i - 3].Pressed(m_pozition)) {
                             angl_num = i;
-                            polygon = sf::VertexArray(sf::Lines, 2*i);
+                            polygon.resize(i);
                             label.setText("click on the corners of the room:");
                             kostil = false;
                             stage = points;
@@ -76,32 +79,42 @@ int16_t App::render() {
                     if (kostil) {
                         kostil = false;
                         if (cur_ind == 0) {
-                            for (int i = 0; i < angl_num*2; ++i) {
-                                polygon[i] = sf::Vector2f(m_pozition.x, m_pozition.y);
+                            for (int i = 0; i < angl_num; ++i) {
+                                sf::VertexArray q(sf::Lines, 2);
+                                polygon[i] = sf::VertexArray(sf::Lines, 2);
+                                polygon[i][0].position = sf::Vector2f(m_pozition.x, m_pozition.y);
+                                polygon[i][1].position = sf::Vector2f(m_pozition.x, m_pozition.y);
                             }
                         } else {
-                            polygon[cur_ind - 1] = sf::Vector2f(m_pozition.x, m_pozition.y);
-                            polygon[cur_ind] = sf::Vector2f(m_pozition.x, m_pozition.y);
+                            polygon[cur_ind-1][1].position = sf::Vector2f(m_pozition.x, m_pozition.y);
+                            polygon[cur_ind][0].position = sf::Vector2f(m_pozition.x, m_pozition.y);
                         }
-                        cur_ind += 2;
-                        if (cur_ind == angl_num*2) {
+                        cur_ind++;
+                        if (cur_ind == angl_num) {
+                            label.setText("select wall types:");
                             stage = walls;
                         }
                     }
                 } else {
                     kostil = true;
                 }
-                window_->draw(polygon);
-
+                for (auto& elem : polygon) {
+                    window_->draw(elem);
+                }
                 break;
             case walls:
-                window_->draw(polygon);
-
-                break;
-            case ray:
-                if (vec_end.x != -1) {
-                    window_->draw(line);
+                for (auto& elem : polygon) {
+                    window_->draw(elem);
                 }
+
+//                stage = ray;
+                break;
+//            case ray:
+//                if (vec_end.x != -1) {
+//                    window_->draw(line);
+//                }
+//
+//                break;
         }
 
 
