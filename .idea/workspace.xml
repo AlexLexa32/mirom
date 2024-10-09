@@ -25,6 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="756d0815-da0f-4884-a90b-39613d786742" name="Changes" comment="mda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mirro.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mirro.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mirro.h" beforeDir="false" afterPath="$PROJECT_DIR$/mirro.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +125,7 @@
       <workItem from="1728068326899" duration="920000" />
       <workItem from="1728109058750" duration="1032000" />
       <workItem from="1728303734094" duration="1479000" />
-      <workItem from="1728307134854" duration="17029000" />
+      <workItem from="1728307134854" duration="21980000" />
     </task>
     <task id="LOCAL-00001" summary="mda">
       <option name="closed" value="true" />
