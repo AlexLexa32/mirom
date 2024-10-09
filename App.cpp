@@ -30,7 +30,7 @@ int16_t App::render() {
     line[1].color = sf::Color::Cyan;
 
     //play
-    math_vector<double> r(0, 0);
+    light<double> r(0, 0);
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
@@ -118,7 +118,7 @@ int16_t App::render() {
                 if (vec_end.x != -1) {
                     window_->draw(line);
                     if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
-                        r = math_vector<double>(vec_start/1234, vec_end/1234);
+                        r = light<double>(vec_start, vec_end);
                         window_->clear();
                         for (auto& elem : polygon) {
                             window_->draw(elem);
@@ -136,6 +136,9 @@ int16_t App::render() {
                 pixel.setPosition(vec_start.x, vec_end.y);
                 pixel.setFillColor(sf::Color::Yellow);
                 window_->draw(pixel);
+                for (auto& wall : polygon) {
+
+                }
                 vec_start = r.GetPointImage(vec_start);
 
                 break;
