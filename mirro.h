@@ -8,6 +8,7 @@ public:
     flat_mirro(Point<T> A, Point<T> B) : A_(A), B_(B) {};
 
     virtual bool IsCross(light<T> light);
+    virtual Point<T> Cross(light<T> light);
     virtual light<T> Reflect(light<T> light);
 
 protected:
@@ -22,6 +23,7 @@ public:
     rad_mirro(Point<T> A, Point<T> B, Point<T> C, T R) : flat_mirro<T>(A, B), R_(R), C_(C) {};
 
     bool IsCross(light<T> Light);
+
     light<T> Reflect(light<T> Light);
 
 protected:
