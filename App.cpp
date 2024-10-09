@@ -30,7 +30,7 @@ int16_t App::render() {
     line[1].color = sf::Color::Cyan;
 
     //play
-    math_vector<double> r(0, 0);
+    math_vector r(0, 0);
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
@@ -118,7 +118,7 @@ int16_t App::render() {
                 if (vec_end.x != -1) {
                     window_->draw(line);
                     if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
-                        r = math_vector<double>(vec_start/1234, vec_end/1234);
+                        r = math_vector(vec_start/1234, vec_end/1234);
                         window_->clear();
                         for (auto& elem : polygon) {
                             window_->draw(elem);

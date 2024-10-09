@@ -1,69 +1,56 @@
 #include "math_vector.h"
 
-template<class T>
-math_vector<T> math_vector<T>::operator+(math_vector other) {
+math_vector math_vector::operator+(math_vector other) {
     other.x_ += x_;
     other.y_ += y_;
     return other;
 }
 
-template<class T>
-math_vector<T> math_vector<T>::operator-(math_vector other) {
+math_vector math_vector::operator-(math_vector other) {
     other.x_ -= x_;
     other.y_ -= y_;
     return other;
 }
 
-template<class T>
-math_vector<T> math_vector<T>::operator*(T k) {
-    return math_vector<T>(x_ * k, y_ * k);
+math_vector math_vector::operator*(double k) {
+    return math_vector(x_ * k, y_ * k);
 }
 
-template<class T>
-T math_vector<T>::operator*(math_vector other) {
+double math_vector::operator*(math_vector other) {
     return x_ * other.x_ + y_ * other.y_;
 }
 
-template<class T>
-T math_vector<T>::operator^(math_vector other) {
+double math_vector::operator^(math_vector other) {
     return x_  * other.y_ - y_ * other.x_;
 }
 
-template<class T>
-T math_vector<T>::GetAngle(math_vector other) {
-    return atan2(*this * other.x_, *this ^ other.y_);
+double math_vector::GetAngle(math_vector other) {
+    return atan2(*this * other, *this ^ other);
 }
 
-template<class T>
-math_vector<T> math_vector<T>::Rotate(T angle) {
-    math_vector<T> old(x_, y_);
+math_vector math_vector::Rotate(double angle) {
+    math_vector old(x_, y_);
     old.x_ = x_ * cos(angle) - y_ * sin(angle);
     old.y_ = y_ * cos(angle) + x_ * sin(angle);
 
     return old;
 }
 
-template<class T>
-Point<T> math_vector<T>::GetPointImage(const Point<T>& point) {
-    return Point(point.x + x_, point.y + y_);
+Point<double> math_vector::GetPointImage(Point<double> point) {
+    Point<double> ans(point.x + x_, point.y + y_);
+    return ans;
 }
 
-template<class T>
-void math_vector<T>::setX(T x) {
+void math_vector::setX(double x) {
     x_ = x;
 }
 
-template<class T>
-void math_vector<T>::setY(T y) {
+void math_vector::setY(double y) {
     y_ = y;
 }
 
-template<class T>
-math_vector<T>& math_vector<T>::operator=(math_vector<T> other) {
+math_vector& math_vector::operator=(math_vector other) {
     std::swap(x_, other.x_);
     std::swap(y_, other.y_);
     return *this;
 }
-
-
-

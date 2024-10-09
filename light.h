@@ -1,17 +1,16 @@
 #pragma once
 #include "math_vector.h"
 
-template <class T>
-class light: public math_vector<T> {
+class light: public math_vector {
 public:
     light() = default;
-    light(Point<T> point) : math_vector<T>(0,0), p_(point) {};
-    light(Point<T> A, Point<T> B) : math_vector<T>(A, B), p_(A) {};
+    light(Point<double> point) : math_vector(0,0), p_(point) {};
+    light(Point<double> A, Point<double> B) : math_vector(A, B), p_(A) {};
     light& operator=(light other);
-    std::pair<Point<T>, Point<T>> GetPoints();
+    std::pair<Point<double>, Point<double>> GetPoints();
 
-    void setPoint(Point<T> a);
+    void setPoint(Point<double> a);
 protected:
-    Point<T> p_;
+    Point<double> p_;
 };
 

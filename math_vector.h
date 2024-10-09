@@ -2,32 +2,31 @@
 #include "Point.h"
 #include <cmath>
 
-template <class T>
 class math_vector {
 public:
     math_vector() = default;
-    math_vector(T x, T y): x_(x), y_(y) {};
-    math_vector(Point<T> A, Point<T> B): x_(B.x - A.x), y_(B.y - A.y) {};
+    math_vector(double x, double y): x_(x), y_(y) {};
+    math_vector(Point<double> A, Point<double> B): x_(B.x - A.x), y_(B.y - A.y) {};
 
     math_vector operator+(math_vector other);
     math_vector operator-(math_vector other);
-    math_vector operator*(T k);
-    T operator*(math_vector other);
-    T operator^(math_vector other);
+    math_vector operator*(double k);
+    double operator*(math_vector other);
+    double operator^(math_vector other);
 
     math_vector& operator=(math_vector other);
 
-    T GetAngle(math_vector other);
+    double GetAngle(math_vector other);
 
-    math_vector Rotate(T angle);
+    math_vector Rotate(double angle);
 
-    Point<T> GetPointImage(const Point<T>& point);
+    Point<double> GetPointImage(Point<double> point);
 
-    void setX(T x);
-    void setY(T y);
+    void setX(double x);
+    void setY(double y);
 
 protected:
-    T x_;
-    T y_;
+    double x_;
+    double y_;
 };
 
