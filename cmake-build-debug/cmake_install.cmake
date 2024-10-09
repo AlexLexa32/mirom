@@ -1,4 +1,4 @@
-# Install script for directory: /Users/macbook/miromdwjsj
+# Install script for directory: /Users/macbook/miromwdscx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/macbook/miromdwjsj/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/macbook/miromwdscx/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
