@@ -36,7 +36,7 @@ math_vector math_vector::Rotate(double angle) {
     return old;
 }
 
-Point math_vector::GetPointImage(Point point) {
+Point math_vector::GetPointImage(const Point& point) {
     Point ans(point.x + x_, point.y + y_);
     return ans;
 }

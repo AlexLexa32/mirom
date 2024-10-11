@@ -119,7 +119,7 @@ int16_t App::render() {
                 if (vec_end.x != -1) {
                     window_->draw(line);
                     if (!(sf::Mouse::isButtonPressed(sf::Mouse::Left))) {
-                        r = light(vec_start/134, vec_end/134);
+                        r = light(vec_start/134, vec_end/134, vec_start);
                         window_->clear();
                         for (auto& elem : polygon) {
                             window_->draw(elem);
@@ -145,11 +145,21 @@ int16_t App::render() {
                 for (auto& elem : pixels) {
                     window_->draw(elem);
                 }
-                // for (auto& elem : polygon) {
-                //     // flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
-                //     //                  Point(elem[1].position.x, elem[1].position.y));
-                // }
-                vec_start = r.GetPointImage(vec_start);
+                bool flag;
+                for (auto& elem : polygon) {
+                    flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
+                                     Point(elem[1].position.x, elem[1].position.y));
+                    if (mirro.IsCross(r)) {
+                        vec_start = mirro.Cross(r);
+                        r = mirro.Reflect(r);
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    vec_start = r.GetPointImage(vec_start);
+                }
+                r.setPoint(vec_start);
                 window_->display();
                 sf::sleep(sf::milliseconds(20));
 

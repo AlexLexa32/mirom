@@ -4,14 +4,14 @@
 struct Point {
     double x, y;
     Point(double x0 = 0, double y0 = 0): x(x0), y(y0) {};
-    Point(const Point& xx): x(xx.x), y(xx.x) {};
+    Point(const Point& xx): x(xx.x), y(xx.y) {};
     Point operator/(double xx) {
         Point q = *this;
         q.x /= xx;
         q.y /= xx;
         return q;
     }
-    Point& operator=(Point other) {
+    Point& operator=(const Point& other) {
         x = other.x;
         y = other.y;
         return *this;
