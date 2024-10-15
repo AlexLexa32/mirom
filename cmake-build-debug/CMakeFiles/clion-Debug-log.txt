@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /Users/noobmaster_2007/programming/pracs/miromffd -B /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /Users/noobmaster_2007/programming/pracs/miromfd -B /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug
 -- The C compiler identification is AppleClang 15.0.0.15000309
 -- The CXX compiler identification is AppleClang 15.0.0.15000309
 -- Detecting C compiler ABI info
@@ -12,6 +12,6 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found SFML 2.6.1 in /opt/homebrew/lib/cmake/SFML
--- Configuring done (0.9s)
+-- Configuring done (0.8s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug
+-- Build files have been written to: /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug"
+			"value" : "/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/noobmaster_2007/programming/pracs/miromffd"
+			"value" : "/Users/noobmaster_2007/programming/pracs/miromfd"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug"
+			"value" : "/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug"
 		},
 		{
 			"name" : "mirom_IS_TOP_LEVEL",
@@ -1179,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/noobmaster_2007/programming/pracs/miromffd"
+			"value" : "/Users/noobmaster_2007/programming/pracs/miromfd"
 		}
 	],
 	"kind" : "cache",

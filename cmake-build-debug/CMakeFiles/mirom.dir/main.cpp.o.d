@@ -1,5 +1,5 @@
 CMakeFiles/mirom.dir/main.cpp.o: \
-  /Users/noobmaster_2007/programming/pracs/miromffd/main.cpp \
+  /Users/noobmaster_2007/programming/pracs/miromfd/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -823,7 +823,7 @@ CMakeFiles/mirom.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
-  /Users/noobmaster_2007/programming/pracs/miromffd/App.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/App.h \
   /opt/homebrew/include/SFML/Graphics.hpp \
   /opt/homebrew/include/SFML/Window.hpp \
   /opt/homebrew/include/SFML/System.hpp \
@@ -973,6 +973,6 @@ CMakeFiles/mirom.dir/main.cpp.o: \
   /opt/homebrew/include/SFML/Audio/SoundFileFactory.inl \
   /opt/homebrew/include/SFML/Audio/SoundFileReader.hpp \
   /opt/homebrew/include/SFML/Audio/SoundFileWriter.hpp \
-  /Users/noobmaster_2007/programming/pracs/miromffd/Point.h \
-  /Users/noobmaster_2007/programming/pracs/miromffd/button.h \
-  /Users/noobmaster_2007/programming/pracs/miromffd/label.h
+  /Users/noobmaster_2007/programming/pracs/miromfd/Point.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/button.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/label.h

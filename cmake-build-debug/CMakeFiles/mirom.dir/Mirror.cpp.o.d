@@ -1,7 +1,7 @@
 CMakeFiles/mirom.dir/Mirror.cpp.o: \
-  /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.cpp \
-  /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.h \
-  /Users/noobmaster_2007/programming/pracs/miromffd/Point.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.cpp \
+  /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/Point.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \

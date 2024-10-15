@@ -1,6 +1,6 @@
 CMakeFiles/mirom.dir/App.cpp.o: \
-  /Users/noobmaster_2007/programming/pracs/miromffd/App.cpp \
-  /Users/noobmaster_2007/programming/pracs/miromffd/App.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/App.cpp \
+  /Users/noobmaster_2007/programming/pracs/miromfd/App.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -971,8 +971,8 @@ CMakeFiles/mirom.dir/App.cpp.o: \
   /opt/homebrew/include/SFML/Audio/SoundFileFactory.inl \
   /opt/homebrew/include/SFML/Audio/SoundFileReader.hpp \
   /opt/homebrew/include/SFML/Audio/SoundFileWriter.hpp \
-  /Users/noobmaster_2007/programming/pracs/miromffd/Point.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/Point.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
-  /Users/noobmaster_2007/programming/pracs/miromffd/button.h \
-  /Users/noobmaster_2007/programming/pracs/miromffd/label.h
+  /Users/noobmaster_2007/programming/pracs/miromfd/button.h \
+  /Users/noobmaster_2007/programming/pracs/miromfd/label.h

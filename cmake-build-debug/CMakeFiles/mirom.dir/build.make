@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/noobmaster_2007/programming/pracs/miromffd
+CMAKE_SOURCE_DIR = /Users/noobmaster_2007/programming/pracs/miromfd
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mirom.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/mirom.dir/progress.make
 include CMakeFiles/mirom.dir/flags.make
 
 CMakeFiles/mirom.dir/main.cpp.o: CMakeFiles/mirom.dir/flags.make
-CMakeFiles/mirom.dir/main.cpp.o: /Users/noobmaster_2007/programming/pracs/miromffd/main.cpp
+CMakeFiles/mirom.dir/main.cpp.o: /Users/noobmaster_2007/programming/pracs/miromfd/main.cpp
 CMakeFiles/mirom.dir/main.cpp.o: CMakeFiles/mirom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mirom.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/main.cpp.o -MF CMakeFiles/mirom.dir/main.cpp.o.d -o CMakeFiles/mirom.dir/main.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromffd/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mirom.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/main.cpp.o -MF CMakeFiles/mirom.dir/main.cpp.o.d -o CMakeFiles/mirom.dir/main.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromfd/main.cpp
 
 CMakeFiles/mirom.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mirom.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromffd/main.cpp > CMakeFiles/mirom.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromfd/main.cpp > CMakeFiles/mirom.dir/main.cpp.i
 
 CMakeFiles/mirom.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mirom.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromffd/main.cpp -o CMakeFiles/mirom.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromfd/main.cpp -o CMakeFiles/mirom.dir/main.cpp.s
 
 CMakeFiles/mirom.dir/App.cpp.o: CMakeFiles/mirom.dir/flags.make
-CMakeFiles/mirom.dir/App.cpp.o: /Users/noobmaster_2007/programming/pracs/miromffd/App.cpp
+CMakeFiles/mirom.dir/App.cpp.o: /Users/noobmaster_2007/programming/pracs/miromfd/App.cpp
 CMakeFiles/mirom.dir/App.cpp.o: CMakeFiles/mirom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mirom.dir/App.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/App.cpp.o -MF CMakeFiles/mirom.dir/App.cpp.o.d -o CMakeFiles/mirom.dir/App.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromffd/App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mirom.dir/App.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/App.cpp.o -MF CMakeFiles/mirom.dir/App.cpp.o.d -o CMakeFiles/mirom.dir/App.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromfd/App.cpp
 
 CMakeFiles/mirom.dir/App.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mirom.dir/App.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromffd/App.cpp > CMakeFiles/mirom.dir/App.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromfd/App.cpp > CMakeFiles/mirom.dir/App.cpp.i
 
 CMakeFiles/mirom.dir/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mirom.dir/App.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromffd/App.cpp -o CMakeFiles/mirom.dir/App.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromfd/App.cpp -o CMakeFiles/mirom.dir/App.cpp.s
 
 CMakeFiles/mirom.dir/Mirror.cpp.o: CMakeFiles/mirom.dir/flags.make
-CMakeFiles/mirom.dir/Mirror.cpp.o: /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.cpp
+CMakeFiles/mirom.dir/Mirror.cpp.o: /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.cpp
 CMakeFiles/mirom.dir/Mirror.cpp.o: CMakeFiles/mirom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mirom.dir/Mirror.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/Mirror.cpp.o -MF CMakeFiles/mirom.dir/Mirror.cpp.o.d -o CMakeFiles/mirom.dir/Mirror.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mirom.dir/Mirror.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirom.dir/Mirror.cpp.o -MF CMakeFiles/mirom.dir/Mirror.cpp.o.d -o CMakeFiles/mirom.dir/Mirror.cpp.o -c /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.cpp
 
 CMakeFiles/mirom.dir/Mirror.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mirom.dir/Mirror.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.cpp > CMakeFiles/mirom.dir/Mirror.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.cpp > CMakeFiles/mirom.dir/Mirror.cpp.i
 
 CMakeFiles/mirom.dir/Mirror.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mirom.dir/Mirror.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromffd/Mirror.cpp -o CMakeFiles/mirom.dir/Mirror.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/noobmaster_2007/programming/pracs/miromfd/Mirror.cpp -o CMakeFiles/mirom.dir/Mirror.cpp.s
 
 # Object files for target mirom
 mirom_OBJECTS = \
@@ -130,7 +130,7 @@ mirom: /opt/homebrew/lib/libsfml-network.2.6.1.dylib
 mirom: /opt/homebrew/lib/libsfml-window.2.6.1.dylib
 mirom: /opt/homebrew/lib/libsfml-system.2.6.1.dylib
 mirom: CMakeFiles/mirom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mirom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mirom"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mirom.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/mirom.dir/clean:
 .PHONY : CMakeFiles/mirom.dir/clean
 
 CMakeFiles/mirom.dir/depend:
-	cd /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/noobmaster_2007/programming/pracs/miromffd /Users/noobmaster_2007/programming/pracs/miromffd /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug /Users/noobmaster_2007/programming/pracs/miromffd/cmake-build-debug/CMakeFiles/mirom.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/noobmaster_2007/programming/pracs/miromfd /Users/noobmaster_2007/programming/pracs/miromfd /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug /Users/noobmaster_2007/programming/pracs/miromfd/cmake-build-debug/CMakeFiles/mirom.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mirom.dir/depend
 
