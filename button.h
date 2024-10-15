@@ -57,7 +57,7 @@ public:
         txt.setFont(font);
         txt.setFillColor(sf::Color::Black);
         txt.setCharacterSize(sz_);
-        txt.setPosition(x_+5, y_-20);
+        txt.setPosition(x_+5, y_-13);
         window.draw(txt);
     }
     void setSZ(int sz) {

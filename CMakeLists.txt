@@ -13,6 +13,7 @@ set(SOURCE_FILES main.cpp
         light.cpp
         mirro.h
         mirro.cpp
+        file.h
 )
 add_executable(mirom ${SOURCE_FILES}
         main.cpp)

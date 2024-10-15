@@ -32,6 +32,11 @@ int16_t App::render() {
     //play
     light r(0, 0);
     std::vector<sf::RectangleShape> pixels;
+    bool play_flag = true;
+    Label inp_lab(200, 100, 10, 30);
+    bool inp = true;
+    Button1 save_btn(350, 100, 220, 30);
+    save_btn.setSZ(50);
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
@@ -139,9 +144,15 @@ int16_t App::render() {
                 pixel.setFillColor(sf::Color::Yellow);
                 pixels.push_back(pixel);
                 window_->clear();
+                if (play_flag) {
+                    save_btn.setText("save with the name \n'" + inp_lab.txt() + "'");
+                    save_btn.draw(*window_);
+                    inp_lab.draw(*window_);
+                }
                 for (auto& elem : polygon) {
                     window_->draw(elem);
                 }
+                window_->display();
                 for (auto& elem : pixels) {
                     window_->draw(elem);
                 }
@@ -160,8 +171,25 @@ int16_t App::render() {
                     vec_start = r.GetPointImage(vec_start);
                 }
                 r.setPoint(vec_start);
+                if (event.type == sf::Event::TextEntered) {
+                    if (inp) {
+                        if (event.text.unicode == 8) {
+                            inp_lab.pop_back();
+                        } else {
+                            inp_lab.push_back(static_cast<char>(event.text.unicode));
+                        }
+                        inp = false;
+                    }
+                } else {
+                    inp = true;
+                }
+                if (sf::Mouse::isButtonPressed(sf::Mouse::Left) &&
+                save_btn.Pressed(m_pozition)) {
+                    save(static_cast<int>(polygon.size()), polygon, r, inp_lab.txt());
+                    play_flag = false;
+                }
                 window_->display();
-                sf::sleep(sf::milliseconds(20));
+                sf::sleep(sf::milliseconds(50));
 
                 break;
         }

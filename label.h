@@ -60,7 +60,7 @@ public:
         sf::Text txt;
         txt.setString(txt_);
         txt.setFont(font);
-        txt.setFillColor(sf::Color::White);
+        txt.setFillColor(sf::Color::Black);
         if (clr_ == sf::Color::Black) {
             txt.setFillColor(sf::Color::White);
         }
@@ -88,10 +88,8 @@ public:
         x_ += x;
     }
     void push_back(char x) {
-        if (x >= '0' && x <= '9') {
-            if (txt_.size() < 7) {
-                txt_.push_back(x);
-            }
+        if (txt_.size() < 7) {
+            txt_.push_back(x);
         }
     }
     void pop_back() {
