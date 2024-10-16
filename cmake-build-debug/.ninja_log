@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 23	762	1729068036883466488	CMakeFiles/mirom.dir/main.cpp.o	3df4ca92d3fd1a06
 3	44	1729070330966083173	build.ninja	4e203116290df93d
 9	599	1729067280113841941	CMakeFiles/mirom.dir/light.cpp.o	4271813ddd073652
@@ -6,3 +7,17 @@
 9	598	1729067280113890273	CMakeFiles/mirom.dir/math_vector.cpp.o	38ef55256e61f352
 25	766	1729068411279921282	CMakeFiles/mirom.dir/App.cpp.o	fe2af459513da9b7
 766	817	1729068411334512082	mirom	8d514d2ccded6fc5
+=======
+5	494	1729068011613102701	CMakeFiles/mirom.dir/App.cpp.o	44b351bda9ee932f
+7	431	1729066490418257645	CMakeFiles/mirom.dir/math_vector.cpp.o	b864e19572aec21a
+7	424	1729066490418372601	CMakeFiles/mirom.dir/light.cpp.o	93cf7c5337488d13
+6	439	1729068729931678268	CMakeFiles/mirom.dir/mirro.cpp.o	7857d0870c5f3230
+10	509	1729067104651112342	CMakeFiles/mirom.dir/main.cpp.o	ab76ee5f1592b1a9
+439	518	1729068730365031289	mirom	f980b4dd43dbf99e
+5	534	1729069979614268437	CMakeFiles/mirom.dir/light.cpp.o	b031db02278145fe
+5	537	1729069979614267229	CMakeFiles/mirom.dir/math_vector.cpp.o	1dd673b747bc2074
+5	538	1729069979616590213	CMakeFiles/mirom.dir/mirro.cpp.o	e29e09c4eb55442c
+4	639	1729069979720336574	CMakeFiles/mirom.dir/main.cpp.o	62e67bfff93b3155
+4	771	1729069979853065281	CMakeFiles/mirom.dir/App.cpp.o	fd7261ae9215de7d
+772	822	1729069979906948355	mirom	8d514d2ccded6fc5
+>>>>>>> origin/back

@@ -184,7 +184,7 @@ int16_t App::render() {
                     flat_mirro mirro(Point(elem[0].position.x, elem[0].position.y),
                                      Point(elem[1].position.x, elem[1].position.y));
                     if (mirro.IsCross(r)) {
-                        vec_start = mirro.Cross(r);
+                        vec_start = r.GetPoints().first;
                         r = mirro.Reflect(r);
                         flag = false;
                         break;
