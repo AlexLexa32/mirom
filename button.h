@@ -29,7 +29,7 @@ public:
         x_ = x;
         y_ = y;
         txt_ = "";
-        sz_ = 80;
+        sz_ = 50;
     }
     Button1(const Button1& other) {
         height_ = other.height_;

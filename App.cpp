@@ -8,12 +8,10 @@ int16_t App::render() {
     btn_points.setText("points");
     Button1 btn_walls(100, 50, 220+10, 10, sf::Color(255, 255, 255, 150));
     btn_walls.setText("walls");
-    Button1 btn_ray(100, 50, 10, 10, sf::Color(255, 255, 255, 150));
+    Button1 btn_ray(100, 50, 10, 60+10, sf::Color(255, 255, 255, 150));
     btn_ray.setText("ray");
-    Button1 btn_play(100, 50, 10, 10, sf::Color(255, 255, 255, 150));
+    Button1 btn_play(100, 50, 110+10, 60+10, sf::Color(255, 255, 255, 150));
     btn_play.setText("play");
-
-
 
     Stage stage = input;
     //input
@@ -110,7 +108,7 @@ int16_t App::render() {
                         cur_ind++;
                         if (cur_ind == angl_num) {
                             label.setText("select wall types:");
-                            stage = walls;
+//                            stage = walls;
                         }
                     }
                 } else {
@@ -126,7 +124,7 @@ int16_t App::render() {
                     window_->draw(elem);
                 }
 
-                stage = ray;
+//                stage = ray;
                 break;
             case ray:
                 window_->clear();
@@ -152,7 +150,7 @@ int16_t App::render() {
                         for (auto& elem : polygon) {
                             window_->draw(elem);
                         }
-                        stage = play;
+//                        stage = play;
                         break;
                     }
                 }
@@ -224,6 +222,24 @@ int16_t App::render() {
         btn_play.draw(*window2_);
         window_->display();
         window2_->display();
+        sf::Vector2i m_pozition2 = sf::Mouse::getPosition(*window2_);
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+            if (btn_input.Pressed(m_pozition2)) {
+                stage = input;
+            }
+//            if (btn_points.Pressed(m_pozition2)) {
+//                stage = points;
+//            }
+            if (btn_walls.Pressed(m_pozition2)) {
+                stage = walls;
+            }
+            if (btn_play.Pressed(m_pozition2)) {
+                stage = play;
+            }
+            if (btn_ray.Pressed(m_pozition2)) {
+                stage = ray;
+            }
+        }
     }
     return 0;
 }
