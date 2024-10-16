@@ -1203,8 +1203,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/macbook/miromh/cmake-build-debug",
-		"source" : "/Users/macbook/miromh"
+		"build" : "/Users/macbook/mirome/cmake-build-debug",
+		"source" : "/Users/macbook/mirome"
 	},
 	"version" : 
 	{
