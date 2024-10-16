@@ -1,6 +1,20 @@
 #include "App.h"
 
 int16_t App::render() {
+    //pult
+    Button1 btn_input(100, 50, 10, 10, sf::Color(255, 255, 255, 150));
+    btn_input.setText("input");//{input, points, walls, ray, play}
+    Button1 btn_points(100, 50, 110+10, 10, sf::Color(255, 255, 255, 150));
+    btn_points.setText("points");
+    Button1 btn_walls(100, 50, 220+10, 10, sf::Color(255, 255, 255, 150));
+    btn_walls.setText("walls");
+    Button1 btn_ray(100, 50, 10, 10, sf::Color(255, 255, 255, 150));
+    btn_ray.setText("ray");
+    Button1 btn_play(100, 50, 10, 10, sf::Color(255, 255, 255, 150));
+    btn_play.setText("play");
+
+
+
     Stage stage = input;
     //input
     Label label(100, 70, 20, 0, sf::Color::Transparent, sf::Color::Transparent);
@@ -35,15 +49,24 @@ int16_t App::render() {
     bool play_flag = true;
     Label inp_lab(200, 100, 10, 30);
     bool inp = true;
-    Button1 save_btn(350, 100, 220, 30);
+    Button1 save_btn(350, 100, 10, 10);
     save_btn.setSZ(50);
     while (window_->isOpen()) {
         sf::Event event;
         sf::Vector2i m_pozition = sf::Mouse::getPosition(*window_);
         while (window_->pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
+            if (event.type == sf::Event::Closed) {
                 window_->close();
+                return 0;
+            }
+        }
+        while (window2_->pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed) {
+                window2_->close();
+                return 0;
+            }
         }
 
         switch (stage) {
@@ -147,7 +170,7 @@ int16_t App::render() {
                 if (play_flag) {
                     save_btn.setText("save with the name \n'" + inp_lab.txt() + "'");
                     save_btn.draw(*window_);
-                    inp_lab.draw(*window_);
+//                    inp_lab.draw(*window_);
                 }
                 for (auto& elem : polygon) {
                     window_->draw(elem);
@@ -193,9 +216,14 @@ int16_t App::render() {
 
                 break;
         }
-
-
+        window2_->clear();
+        btn_input.draw(*window2_);
+        btn_points.draw(*window2_);
+        btn_walls.draw(*window2_);
+        btn_ray.draw(*window2_);
+        btn_play.draw(*window2_);
         window_->display();
+        window2_->display();
     }
     return 0;
 }

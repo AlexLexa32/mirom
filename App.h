@@ -16,6 +16,7 @@ public:
     {
         std::swap(name, name_);
         window_ = new sf::RenderWindow(sf::VideoMode(width_, height_), name_);
+        window2_ = new sf::RenderWindow(sf::VideoMode(400, 400), "pult");
     }
 
     int16_t render();
@@ -24,5 +25,6 @@ private:
     int width_, height_;
     std::string name_;
     sf::RenderWindow* window_;
+    sf::RenderWindow* window2_;
     enum Stage {input, points, walls, ray, play};
 };

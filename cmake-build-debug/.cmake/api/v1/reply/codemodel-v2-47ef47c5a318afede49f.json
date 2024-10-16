@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/macbook/mirom\u0440/cmake-build-debug",
-		"source" : "/Users/macbook/mirom\u0440"
+		"build" : "/Users/macbook/miromfe/cmake-build-debug",
+		"source" : "/Users/macbook/miromfe"
 	},
 	"version" : 
 	{

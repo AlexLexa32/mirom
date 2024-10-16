@@ -61,7 +61,7 @@ public:
         txt.setString(txt_);
         txt.setFont(font);
         txt.setFillColor(sf::Color::Black);
-        if (clr_ == sf::Color::Black) {
+        if (clr_ == sf::Color::Black || clr_ == sf::Color::Transparent) {
             txt.setFillColor(sf::Color::White);
         }
         txt.setCharacterSize(sz_);
@@ -88,7 +88,7 @@ public:
         x_ += x;
     }
     void push_back(char x) {
-        if (txt_.size() < 7) {
+        if (txt_.size() < 14) {
             txt_.push_back(x);
         }
     }
