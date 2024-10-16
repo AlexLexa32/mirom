@@ -1,3 +1,3 @@
-/Users/macbook/mirome/cmake-build-debug/CMakeFiles/mirom.dir
-/Users/macbook/mirome/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/macbook/mirome/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/macbook/miromqw/cmake-build-debug/CMakeFiles/mirom.dir
+/Users/macbook/miromqw/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/macbook/miromqw/cmake-build-debug/CMakeFiles/rebuild_cache.dir

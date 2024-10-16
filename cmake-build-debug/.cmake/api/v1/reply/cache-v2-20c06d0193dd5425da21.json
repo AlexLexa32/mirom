@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/macbook/mirome/cmake-build-debug"
+			"value" : "/Users/macbook/miromqw/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbook/mirome/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/macbook/miromqw/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/macbook/mirome"
+			"value" : "/Users/macbook/miromqw"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbook/mirome/cmake-build-debug"
+			"value" : "/Users/macbook/miromqw/cmake-build-debug"
 		},
 		{
 			"name" : "mirom_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/macbook/mirome"
+			"value" : "/Users/macbook/miromqw"
 		}
 	],
 	"kind" : "cache",
