@@ -24,6 +24,7 @@ inline void read(int& n, std::vector<sf::VertexArray>& walls, light& ray,
                  const std::string& name) {
     std::ifstream fin(name);//🥖🥖🥖🥖🥖🐟🐟
     fin >> n;
+    walls.resize(n);
     for (auto& wall : walls) {
         fin >> wall[0].position.x >> wall[0].position.y;
         fin >> wall[1].position.x >> wall[1].position.y;
