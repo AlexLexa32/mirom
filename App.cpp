@@ -234,7 +234,7 @@ int16_t App::render() {
                 }
 
                 if (save_btn.Pressed(m_pozition2) &&
-                (stage == play || (stage == ray && vec_end.x != -1))) {
+                (stage == play || (stage == ray && vec_end.x != -1)) && inp_lab.txt() != "") {
                     if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && play_flag) {
                         save(static_cast<int>(polygon.size()), polygon, r, inp_lab.txt());
                         play_flag = false;
@@ -244,7 +244,7 @@ int16_t App::render() {
                 }
 
                 if (read_btn.Pressed(m_pozition2) &&
-                (stage == play || (stage == ray && vec_end.x != -1))) {
+                (stage == play || (stage == ray && vec_end.x != -1)) && inp_lab.txt() != "") {
                     if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && play_flag) {
                         int n;
                         pixels.clear();
