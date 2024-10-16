@@ -6,13 +6,15 @@ class math_vector {
 public:
     math_vector() = default;
     math_vector(double x, double y): x_(x), y_(y) {};
+    math_vector(const math_vector &v): x_(v.x_), y_(v.y_) {};
     math_vector(const Point& A, const Point& B): x_(B.x - A.x), y_(B.y - A.y) {};
 
     math_vector operator+(math_vector other);
+    math_vector operator-();
     math_vector operator-(math_vector other);
     math_vector operator*(double k);
     double operator*(math_vector other);
-    double operator^(math_vector other);
+    double operator%(math_vector other);
 
     math_vector& operator=(math_vector other);
 

@@ -20,12 +20,12 @@ double math_vector::operator*(math_vector other) {
     return x_ * other.x_ + y_ * other.y_;
 }
 
-double math_vector::operator^(math_vector other) {
+double math_vector::operator%(math_vector other) {
     return x_  * other.y_ - y_ * other.x_;
 }
 
 double math_vector::GetAngle(math_vector other) {
-    return atan2(*this * other, *this ^ other);
+    return atan2(*this % other, *this * other);
 }
 
 math_vector math_vector::Rotate(double angle) {
@@ -34,6 +34,10 @@ math_vector math_vector::Rotate(double angle) {
     old.y_ = y_ * cos(angle) + x_ * sin(angle);
 
     return old;
+}
+
+math_vector math_vector::operator-() {
+    return math_vector(-x_, -y_);
 }
 
 Point math_vector::GetPointImage(const Point& point) {
